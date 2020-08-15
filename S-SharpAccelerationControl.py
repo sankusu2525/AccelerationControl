@@ -3,7 +3,6 @@ import time
 import wiringpi2 as wiringpi
 
 PWM18 =18
-PWM19 =19
 
 interval = float( 2.5 )
 upper_pulse = float( 2.4 )
@@ -134,5 +133,4 @@ if __name__ == "__main__":
             print ("Svalue:", value)
     except KeyboardInterrupt:
         wiringpi.pinMode(PWM18, wiringpi.GPIO.INPUT)
-        wiringpi.pinMode(PWM19, wiringpi.GPIO.INPUT)
         pass
